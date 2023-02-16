@@ -1,8 +1,9 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+   // id 'org.jetbrains.kotlin.android'
 
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32
@@ -29,12 +30,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-        buildFeatures {
-            viewBinding true
-        }
-        kotlinOptions {
-            jvmTarget = '1.8'
-        }
+
         namespace 'com.example.kotlinlesson1'
     }
 
